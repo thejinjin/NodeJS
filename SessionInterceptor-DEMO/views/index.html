@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script language="javascript" src="/javascripts/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function post() {
+            var data = {
+                "sessionVal": $("#session").val()
+            };
+            $.ajax({
+                type: "POST",
+                url: "index",
+                data: data,
+                success: function(data) {
+                    alert(data.Message);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h1><%= title %></h1>
+    <p><input type="text" id="session" value="我是SESSION" />
+    </p>
+    <button onclick="post()">存入SESSION</button>
+    <p>
+        <a href='/'>SESSION操作地址</a><br>
+        <a href='/list'>拦截器验证是否通过</a><br>
+
+    </p>
+</body>
+
+</html>
