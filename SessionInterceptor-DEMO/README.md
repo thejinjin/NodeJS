@@ -1,9 +1,19 @@
-# Session-Interceptor-DEMO
-一个NodeJS的项目。<br>
-一个关于SESSION和拦截器的DEMO。<br>
-这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。<br>
+### 介绍
+---
+> - NodeJS的项目，是SESSION和拦截器的DEMO。
+> - 这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。
 
-<h2>使用方法</h2>
-1、安装组建：<code>npm install</code><br>
-2、启动node：<code>node app.js</code><br>
-3、进行访问：<code>http://localhost:3000</code>
+
+### 使用方法
+---
+
+```js
+//安装组建
+npm install
+
+//启动node
+node app.js
+
+//进行访问
+http://localhost:3000
+```
